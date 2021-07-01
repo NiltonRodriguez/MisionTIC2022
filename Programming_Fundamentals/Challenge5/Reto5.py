@@ -170,10 +170,3 @@ if __name__ == '__main__':
     except KeyError:
         # En caso de no encontrar el artículo, mostrar el mensaje de error.
         print("ERROR")
-
-# En caso de necesitar comprobar el nombre del producto.
-# for key in db:
-#     if prod_value[0] in db[key]:
-#         raise KeyError
-#     else:
-#         db[prod_key] = prod_value
