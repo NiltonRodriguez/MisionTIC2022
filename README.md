@@ -27,7 +27,14 @@ Even with previous studies, I solve all the challenges with the progression of t
 * [Challenge 4](/Programming_Fundamentals/Chellenge4): Check for copied exams.
 * [Challenge 5](/Programming_Fundamentals/Chellenge5): Supermarket inventory with dictionaries.
 
-### - Cycle 2: Programming Basics in Java
+### - Cycle 2: [Programming Basics in Java](/Programming_Basics)
+* [Challenge 1](/Programming_Basics/Challenge1): Calculate Body Mass Index and heart problems.
+* [Challenge 2](/Programming_Basics/Challenge2): Supermarket inventory with HashMaps.
+* [Challenge 3](/Programming_Basics/Challenge3):
+Updated supermarket inventory with HashMaps and GUI.
+* [Challenge 4](/Programming_Basics/Challenge4): SQL Queries.
+* [Challenge 5](/Programming_Basics/Challenge5): Updated Supermarket inventory with MySQL database and GUI.
+    * Due to a suggestion from the teacher we solve this challenge with JDBC instead of Spring Boot.
 
 ### - Cycle 3: Software Development
 
