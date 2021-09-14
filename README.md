@@ -21,11 +21,11 @@ The description of the challenges (problem sets) and comments in the code are in
 Even with previous studies, I solve all the challenges with the progression of the topics according to the classes.
 
 ### - Cycle 1: [Programming Fundamentals in Python](/Programming_Fundamentals)
-* [Challenge 1](/Programming_Fundamentals/Chellenge1): Calculate salary with legal discounts.
-* [Challenge 2](/Programming_Fundamentals/Chellenge2): Calculate speed tickets.
-* [Challenge 3](/Programming_Fundamentals/Chellenge3): Select cars from catalogs according to specific criteria.
-* [Challenge 4](/Programming_Fundamentals/Chellenge4): Check for copied exams.
-* [Challenge 5](/Programming_Fundamentals/Chellenge5): Supermarket inventory with dictionaries.
+* [Challenge 1](/Programming_Fundamentals/Challenge1): Calculate salary with legal discounts.
+* [Challenge 2](/Programming_Fundamentals/Challenge2): Calculate speed tickets.
+* [Challenge 3](/Programming_Fundamentals/Challenge3): Select cars from catalogs according to specific criteria.
+* [Challenge 4](/Programming_Fundamentals/Challenge4): Check for copied exams.
+* [Challenge 5](/Programming_Fundamentals/Challenge5): Supermarket inventory with dictionaries.
 
 ### - Cycle 2: [Programming Basics in Java](/Programming_Basics)
 * [Challenge 1](/Programming_Basics/Challenge1): Calculate Body Mass Index and heart problems.

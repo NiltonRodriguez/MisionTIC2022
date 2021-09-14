@@ -72,33 +72,3 @@ def profesor_check(examen, profesor, lst):
 
 
 print(check_exam(exam_lst), profesor_check(examen, profesor, exam_lst))
-
-
-# def examen_profesor(profesor, lst):
-#     '''
-#     Funcion para verificar la cantidad de copias encontradas por el profesor.
-#
-#     Parameters
-#     ----------
-#     profesor : Type (int)
-#       es un número entero que representa los exámenes recordados.
-#     lst = Type list
-#       es la lista que contine los valores de los exámenes.
-#
-#     Returns
-#     -------
-#     copia_memoria : Type (int)
-#       Regresa el numero de examenes identificados por el profesor.
-#     '''
-#     diccionario = {}
-#     copia_memoria = 0
-#     for posicion, value in enumerate(lst):
-#         if (value in diccionario) and (posicion
-#                                        - diccionario.get(value) <= profesor):
-#             copia_memoria += 1
-#         diccionario[value] = posicion
-#         # diccionario.update({value: posicion})
-#     return copia_memoria
-
-
-# print(check_exam(exam_lst), examen_profesor(profesor, exam_lst))
