@@ -27,7 +27,7 @@ Tabla 1: Productos disponibles en la tienda.
 
 Estos registros deben ingresarse a la base de datos utilizando MySQL Workbech. Serán utilizados más adelante para realizar pruebas.
 
-[Parte 2: Implementando el controlador con Spring Data JDBC.](/Programming_Basics/Challenge5/src)
+[Parte 2: Implementando el controlador con Spring Data JDBC.](/Programming_Basics/Challenge5/inventarioAPP/src)
 
 Para esta parte debemos seguir los siguientes pasos:
 
@@ -41,7 +41,7 @@ En el Paquete controlador, declare una clase llamada ControladorProducto. Esta c
 En la clase ControladorProducto implemente los métodos CRUD para la tabla Productos y un método informe que obtenga el nombre del producto con el precio mayor; el nombre del producto con el precio menor; el promedio de precios de todos los productos y el valor total del inventario a la fecha. Este último se obtiene multiplicando el precio de cada producto por el inventario disponible y luego sumando todos los resultados.
 Verifique el correcto funcionamiento de los métodos implementados.
 
-[Parte 3:Implementando la Vista con Swing.](/Programming_Basics/Challenge5/src/view)
+[Parte 3:Implementando la Vista con Swing.](/Programming_Basics/Challenge5/inventarioAPP/src/view)
 
 Luego de implementar el modelo y el controlador con la ayuda de Spring Data JDBC, el dueño del almacén le entrega el siguiente diseño de la interfaz gráfica (ver figura 2). En el diseño se incluyen las ventanas emergentes que surgen como resultado de realizar algunas validaciones.Esta interfaz el la misma construida en el reto 3. El código debe alojarse en el paquete vista declarado anteriormente (Esta interfaz es la misma desarrollada en el reto 3).
 
