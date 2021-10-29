@@ -1,0 +1,88 @@
+-- The following queries are written for the deployment of an APEX Oracle Database instance.
+
+-- Define the client table
+CREATE TABLE client (
+id NUMBER NOT NULL,
+Name VARCHAR2(4000) NULL,
+email VARCHAR2(4000) NULL,
+Age NUMBER(10) NULL,
+PRIMARY KEY (id)
+);
+
+-- Generate ID using Sequence and Trigger
+CREATE SEQUENCE client_seq START WITH 1 INCREMENT BY 1;
+
+CREATE OR REPLACE TRIGGER client_seq_tr
+BEFORE INSERT ON client FOR EACH ROW
+WHEN (NEW.id IS NULL)
+BEGIN
+SELECT client_seq.NEXTVAL INTO :NEW.id FROM DUAL;
+END;
+
+-- Define the message table
+CREATE TABLE message (
+id NUMBER NOT NULL,
+messagetext VARCHAR2(4000) NULL,
+PRIMARY KEY (id)
+);
+
+-- Generate ID using Sequence and Trigger
+CREATE SEQUENCE message_seq START WITH 1 INCREMENT BY 1;
+
+CREATE OR REPLACE TRIGGER message_seq_tr
+BEFORE INSERT ON message FOR EACH ROW
+WHEN (NEW.id IS NULL)
+BEGIN
+SELECT message_seq.NEXTVAL INTO :NEW.id FROM DUAL;
+END;
+
+-- Client Get Handler
+SELECT * FROM CLIENT
+
+-- Message get Handler
+SELECT * FROM MESSAGE
+
+-- Client Post Handler
+BEGIN
+ INSERT INTO CLIENT (ID, NAME, EMAIL, AGE)
+ VALUES(:id, :name, :email, :age);
+ :status_code:=201;
+END;
+
+-- Message Post Handler
+BEGIN
+ INSERT INTO Message (ID, MESSAGETEXT)
+ VALUES(:id, :message text);
+ :status_code:=201;
+END;
+
+-- Client Put Handler
+BEGIN
+ UPDATE CLIENT SET NAME=:name, EMAIL=:email,
+ AGE=:age WHERE ID=:id;
+ :status_code :=201;
+END;
+
+-- Message Put Handler
+BEGIN
+ UPDATE MESSAGE SET MESSAGETEXT=:messagetext WHERE ID=:id;
+ :status_code :=201;
+END;
+
+-- Client Delete Handler
+BEGIN
+ DELETE FROM CLIENT WHERE ID=:id;
+ :status_code :=204;
+END;
+
+-- Message Delete Handler
+BEGIN
+ DELETE FROM MESSAGE WHERE ID=:id;
+ :status_code :=204;
+END;
+
+-- Client Get Handler with Parameter
+SELECT * FROM CLIENT WHERE ID=:id
+
+-- Message Get Handler with Parameter
+SELECT * FROM MESSAGE WHERE ID=:id

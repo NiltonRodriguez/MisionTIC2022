@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Import the required libraries and modules.-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/functions.js">
+    </script>
+    <style>
+        table, th, td{
+            border: 1px solid;
+        }
+    </style>
+    <title>Skate Rental</title>
+</head>
+<body>
+    <h1>Bienvenidos a Skate Rental</h1>
+    <br>
+    <table id="result">
+    </table>
+    <!--<div id="result"></div>-->
+    <!-- Display Skate table information and formulary-->
+    <h3>Información de Patinetas</h3>
+    <div>
+        <input type="number" id="id" placeholder="ID">
+        <input type="text" id="brand" placeholder="MARCA">
+        <input type="number" id="model" placeholder="MODELO">
+        <input type="number" id="category_id" placeholder="ID DE LA CAEGORIA">
+        <input type="text" id="name" placeholder="NOMBRE">
+    </div>
+    <br>
+    <!-- Call the GET request on the Skate table-->
+    <button onclick="getInfo('skate')">Consultar</button>
+    <!-- Call the POST request on the Skate table-->
+    <button onclick="saveInfo('skate')">Guardar Patineta</button>
+    <!-- Call the PUT request on the Skate table-->
+    <button onclick="updateInfo('skate')">Actualizar Patineta</button>
+    <br>
+    <!-- Display Client table information and formulary-->
+    <h3>Información de Clientes</h3>
+    <div>
+        <input type="number" id="id2" placeholder="ID">
+        <input type="text" id="name2" placeholder="NOMBRE">
+        <input type="text" id="email" placeholder="EMAIL">
+        <input type="number" id="age" placeholder="EDAD">
+    </div>
+    <br>
+    <!-- Call the GET request on the Client table-->
+    <button onclick="getInfo('client')">Consultar</button>
+    <!-- Call the POST request on the Client table-->
+    <button onclick="saveInfo('client')">Guardar Cliente</button>
+    <!-- Call the PUT request on the Client table-->
+    <button onclick="updateInfo('client')">Actualizar Cliente</button>
+    <br>
+    <!-- Display Message table information and formulary-->
+    <h3>Información de Mensajes</h3>
+    <div>
+        <input type="number" id="id3" placeholder="ID">
+        <input type="text" id="messagetext" placeholder="MENSAJE">
+    </div>
+    <br>
+    <!-- Call the GET request on the Message table-->
+    <button onclick="getInfo('message')">Consultar</button>
+    <!-- Call the POST request on the Message table-->
+    <button onclick="saveInfo('message')">Guardar Mensaje</button>
+    <!-- Call the PUT request on the Message table-->
+    <button onclick="updateInfo('message')">Actualizar Mensaje</button>
+</body>
+</html>

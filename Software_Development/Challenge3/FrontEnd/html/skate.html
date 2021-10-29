@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/functions.js"></script>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+    <title>Skates</title>
+</head>
+<body>
+    <h1>Skate Rental</h1>
+    <br>
+    <h3>Información de Patinetas</h3>
+    <br>
+    <!-- Display Skate table information-->
+    <table id="result">Lista de Patinetas</table>
+    <br>
+    <!-- Display Skate formulary-->
+    <fieldset style="width: 300px; margin: 0px auto;">
+        <legend>Nuevo Registro</legend>
+        <p>Marca: <input type="text" id="brand"></p>
+        <p>Año: <input type="number" id="year"></p>
+        <p>
+            Categoría: <select id="category">
+                <option value="0">Elija una Categoría</option>
+            </select>
+        </p>
+        <p>Nombre: <input type="text" id="name"></p>
+        <p>
+            Descripción: <textarea id="description" rows="4" cols="40"></textarea>
+        </p>
+    </fieldset>
+    <br>
+    <fieldset style="width: 235px; margin: 0px auto;">
+        <!-- Call the GET request on the Skate table-->
+        <button onclick="getInfo('Skate')">Consultar</button>
+        <!-- Call the POST request on the Skate table-->
+        <button onclick="saveInfo('Skate')">Guardar</button>
+        <!-- Call the PUT request on the Skate table-->
+        <button onclick="updateInfo('Skate')">Actualizar</button>
+    </fieldset>
+</body>
+</html>

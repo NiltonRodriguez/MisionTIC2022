@@ -36,6 +36,11 @@ Updated supermarket inventory with HashMaps and GUI.
 * [Challenge 5](/Programming_Basics/Challenge5): Updated Supermarket inventory with MySQL database and GUI.
     * Due to a suggestion from the teacher we solve this challenge with JDBC instead of Spring Boot.
 
-### - Cycle 3: Software Development
+### - Cycle 3: [Software Development](/Software_Development)
+* [Challenge 1](/Software_Development/Challenge1): Create an Oracle Cloud Apex Instance.
+* [Challenge 2](/Software_Development/Challenge2): Create more services in the Oracle Cloud Apex Instance and Create a basic Front-End.
+* [Challenge 3](/Software_Development/Challenge3): Create the application Back-End in Spring Boot with the Get and Post REST services and Modify the previous Front-End.
+* [Challenge 4](/Software_Development/Challenge4): Add the Put and Delete REST services to the Back-End and Modify the previous Front-End.
+* [Challenge 5](/Software_Development/Challenge5): Implement Reports for the Reservations table and Finish the Front-End.
 
 ### - Emphasis cycle: (Mobile / Web)
